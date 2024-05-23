@@ -1,0 +1,15 @@
+.intro {       
+    font-size: 72px;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+.intro-text {
+    text-align: center;    
+}
+.subintro {
+    font-size: 20px;
+}
+.intro-text p, .intro-text h1{
+    margin: 0;
+}

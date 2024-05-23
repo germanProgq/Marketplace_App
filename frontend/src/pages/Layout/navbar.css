@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+#header {
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    inset: 0;
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;   
+    background: var(--header-bg);    
+}
+.header-links {        
+    margin-right: 1vw;
+    display: flex;
+    width: 74vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header a {
+    font-size: 23px;
+    text-decoration: inherit;
+}
+.logo h6 { 
+    text-align: center;    
+    font-size: 66px; 
+    font-family: "Platypi", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #40342d;
+    background: transparent;
+    transition: .3s, font-weight .8s;
+    outline: none;
+}
+.logo {
+   display: flex;
+   height: 10vh;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 2vh;
+   width: 20vw;
+   transition: .6s;
+   outline: none;
+}
+#header .logo:hover {
+    scale: 1.2; 
+    outline: none;   
+  }
+#header .logo:hover h6 {
+    font-weight: 200;
+    font-size: 60px;
+}
+
+.header-links a {
+    transition: all 1.2s;
+}
+.header-links a:hover {
+    transform: translateY(-3px);
+    font-weight: 700;
+    font-size: 30px !important;
+}
+
+#mobile-header {
+    display: flex;
+    width: 100vw;
+    height: var(--mobile-header-height);
+    justify-content: space-between;
+    align-items: center;
+    background: var(--header-bg);
+    position: fixed;
+    z-index: 999;    
+}
+#mobile-header #user {
+    width: 70vw;
+    text-overflow: ellipsis;
+}
+#mobile-header a {
+    text-decoration: none !important;
+}
+#phone-user-click-menu {
+    top: var(--mobile-header-height);
+    transition: 1.8s;
+    height: 92vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    width: 80%;
+    flex-direction: column;
+    background: var(--main-gradient);
+    z-index: 10000000;  
+}
+#phone-user-click-menu a {
+    transition: 4s;
+}
+#mobile-header #overflow-drop {
+    top: var(--mobile-header-height);
+    height: 92vh;
+    transition: 2s, opacity .9s !important;
+}
+#mobile-header .dropdown-a-shown {
+    font-size: 30px;
+    border-bottom: 1px solid var(--primary);
+}
+#mobile-header .username-clickable {
+    font-size: 23px;
+}
+#mobile-header .dropdown-a-hidden:nth-child(1) {
+    transform: translate3d(120vw, 20px, 0) rotate(45deg);
+    transition: .3s, rotate 5s
+}
+#mobile-header .dropdown-a-hidden:nth-child(2) {
+    transform: translate3d(120vw, -120vh, 0) rotate(135deg);
+    transition: .8s, rotate 5s
+}
+#mobile-header .dropdown-a-hidden:nth-child(3) {
+    transform: translate3d(-120vw, 120vh, 0) rotate(240deg);
+    transition: .5s, rotate 5s
+}
+#mobile-header .dropdown-a-hidden:nth-child(4) {
+    transform: translate3d(10vw, 2000vh, 0) rotate(360deg);
+    transition: 1.3s, rotate 5s
+}
+#mobile-header .logo h6 {
+    margin-left: 3vw;
+    font-size: 76px;
+    outline: inherit;
+}
+#mobile-header .log-in-a {
+    font-size: 27px;
+    margin-right: 10vw;
+    font-weight: 400;
+}
+#mobile-header .logo:active {
+    scale: 1.2;    
+}
+#mobile-header .logo:active h6 {
+    font-weight: 200;
+    font-size: 60px;
+}

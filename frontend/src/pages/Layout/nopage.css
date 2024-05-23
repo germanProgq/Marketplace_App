@@ -1,0 +1,65 @@
+.nopage{
+    width: 100vw;
+    height: 100vh;
+    top: 0 !important;
+    inset: 0 !important;
+    max-height: 100vh;    
+    background: #0f0f0f;        
+    z-index: 100000;
+    overflow: hidden;    
+    position: relative;
+}
+.nopage-wrap {  
+    inset: 0 !important; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000000;
+    overflow: hidden;
+}
+.nopage-wrap::-webkit-scrollbar, .nopage::-webkit-scrollbar {
+    width: 0px; 
+}
+#handboy
+{
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+    
+}
+
+
+#girllight
+{
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl
+{
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+   transform-origin: 60% 0%;
+    transform-box: fill-box;
+  
+}
+
+#zero
+{
+  transform-origin:bottom;
+  transform-box:fill-box;
+  
+}
+
+/*************swing************/
+@keyframes swing {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+
+/*************swing hair************/
+@keyframes swinghair {
+    0% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}

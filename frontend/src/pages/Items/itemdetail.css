@@ -1,0 +1,92 @@
+:root {
+    --button-border-radius: 18px
+}
+.error-item-find, .loading-text {
+    position: absolute;    
+    inset: 0;
+    padding: 0;
+    margin: 0;
+    top: 50vh;
+    font-size: 70px;
+    color: rgb(238, 54, 54);
+    text-align: center;
+}
+.loading-text {    
+    color: antiquewhite;
+}
+.item-page-name {
+    text-align: center;
+    font-size: 70px;
+}
+.item-page-stuff {
+    display: flex;
+    gap: 10vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-page-desc {
+    text-align: start;
+    max-width: 50vw;
+}
+.item-page-img {
+    max-width: 45vw;
+    width: fit-content;
+}
+.add-to-cart-on-page { 
+    display: grid;
+    flex-direction: column;      
+    text-align: center;
+    position: fixed;       
+    left: 80%;
+    bottom: 20px;
+    padding: 0;
+    border-radius: 13px;
+    border: none;    
+    cursor: pointer;
+    transition: 2s all;
+    z-index: 2000;
+    background: none !important;
+}
+.add-to-cart-text-page {
+    background: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    inset: 0;
+    color: var(--primary);
+    font-size: 30px;
+
+}
+.price-for-button {
+    padding-top: 1vh;
+    border-top-left-radius: var(--button-border-radius);
+    border-top-right-radius: var(--button-border-radius);   
+}
+.add-to-cart-text-page {
+    border-bottom-left-radius: var(--button-border-radius);
+    border-bottom-right-radius: var(--button-border-radius);
+    transition: border-radius 1.3s, transform .8s, margin 1.3s, 1.8s ;
+}
+.add-to-cart-text-page {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+}
+.price-for-button {    
+    background: #f5f5f5;
+    margin: 0px;
+    font-size: 30px;
+    color: var(--third);    
+    transition: transform 3s, 1s;
+}
+.add-to-cart-on-page:hover .price-for-button {
+    transform: translate3d(0, 100vh, 0);
+    opacity: 0;   
+}
+.add-to-cart-on-page:hover .add-to-cart-text-page {
+    margin-top: 20px;
+    padding: 3vh;
+    border-radius: var(--button-border-radius);
+    transform: translateY(-10px) !important;
+    font-weight: 600 !important;
+    font-size: 27px;
+}

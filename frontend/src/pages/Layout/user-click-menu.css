@@ -1,0 +1,72 @@
+#user-click-menu {
+    width: 36%;
+    height: 70vh;
+    position: absolute;
+    top: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background: var(--main-gradient);
+    transition: .8s all !important;   
+    display: grid;
+    grid-gap: 5vh;
+    grid-template-rows: repeat(2, 5vh);
+    grid-template-columns: 1;
+}
+#user {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 15vw;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+#user-click-menu a { 
+    list-style: none;
+}
+#user-click-menu a {
+    text-align: center;
+    color: var(--primary);
+}
+#user-click-menu a:hover {
+    font-weight: 550 !important;
+    font-size: 24px  !important;
+}
+.username-clickable {
+    font-size: 23px;
+}
+.user-drop-shown {  
+    transform: translateX(3vw);
+    cursor:default;
+}
+.user-drop-hidden {
+    transform: translateX(100vh);
+    transition: 3s;
+}
+.dropdown-a {    
+    transition: 1.8s all !important;
+}
+
+.dropdown-a-hidden:nth-child(1) {
+    transform: rotate(135deg) translate3d(100vh, -1000px, 0)
+}
+.dropdown-a-hidden:nth-child(2) {
+    transform: translate3d(200px, 1000px, 0);
+}
+.dropdown-a-hidden:nth-child(2) {
+    transform: translate3d(-200px, -1000px, 0);
+}
+#overflow-drop {
+    background: var(--overflow-gradient);
+    transform: translateX(-100vw);
+    position: fixed;    
+    height: 90vh;
+    display: flex;
+    width: 73.4vw;    
+    inset: 0;
+    padding: 0;
+    margin: 0;  
+    opacity: 0;  
+    top: 10vh;
+    transition: .55s all !important;
+}

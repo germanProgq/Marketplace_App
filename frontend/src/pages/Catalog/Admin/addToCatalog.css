@@ -1,0 +1,12 @@
+.addToCatalogForm textarea, .addToCatalogForm input {
+    padding: 1vw 1vw;
+    outline: var(--primary);
+    color: var(--primary);
+    border-radius: 17px;
+    border: .3px solid var(--primary);
+}
+.addToCatalogForm textarea {
+    resize: vertical;
+    max-height: 20vh;
+    overflow: auto;    
+}

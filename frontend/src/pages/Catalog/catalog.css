@@ -1,0 +1,97 @@
+#catalog {
+    width: 100%;
+    padding: 5vh 0;
+    height: auto;
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.product {    
+    padding: 4vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: center;    
+    height: 100%;
+    border-radius: 40px;
+    border: .8px solid var(--primary);
+    transition: .8s;
+}
+.product-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 1vw;
+    justify-content: space-evenly;
+}
+.add-to-cart-button {
+    padding: 2vh 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+.add-to-cart-button:hover {
+    transform: translateY(-.6vh) !important;
+    font-size: 18px;
+    font-weight: 600 !important;
+    padding: 1.8vh 15px;
+    scale: 1 !important;
+}
+.product a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .5s;
+}
+.product a:hover {
+    transform: translateY(-1.8px);
+    font-weight: 800;
+}
+.product a:hover .product button {
+    display: none;
+}
+.product h3 {
+    font-size: 23px;
+}
+.product:hover, .product h3:hover .product, .product button:hover .product, .product .product a:hover .product, .product p:hover .product{
+    scale: 1.1;
+    z-index: 7;    
+}
+.response {
+    padding: 2vh 1vw;
+    border-radius: 10px;
+    z-index: 999;
+    background: #f4f4f4;
+    position: fixed;
+    top: 80%;
+    color: var(--primary);
+}
+#catalog-seperate {
+    width: 100%;
+    grid-row-gap: 10vh;    
+    grid-column-gap: 5%;
+    display: grid;
+    grid-template-rows: repeat(1, minmax(20vh, 40vh));
+    grid-template-columns:repeat(4, 21.3%);
+}
+.phone-catalog-sep {
+    grid-template-columns: repeat(2, 42.6%) !important;   
+    grid-template-rows: repeat(1, 30vh) !important; 
+}
+.phone-catalog-sep .product-buttons {
+    flex-direction: column-reverse !important;
+    gap: 10vw;
+}
+.category-sort, .select-category {
+    background: var(--main-bg);
+}
+#category-select, .select-sort {
+    /* background: rgb(61, 61, 61); */
+    outline: none;
+    border-radius: 8px;
+    height: 100%;   
+}

@@ -1,0 +1,54 @@
+.settings-title {
+    font-size: 60px;
+    text-align: center;
+}
+.what-can-be-changed {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    grid-column-gap: 3%;
+    grid-row-gap: 10vh;
+    grid-template-rows: minmax(20vh, 70vh);
+}
+
+.what-can-be-changed-options a, .delete-account {
+    cursor: pointer;
+    padding: 2vh 5vw;
+    border-radius: 13px;
+    margin: 2px;
+    color: var(--primary);
+    background: var(--main-font-color);
+    border: none;
+    transition: .3s;
+    text-align: center;
+    text-decoration: none;
+}
+.what-can-be-changed-options a:hover, .delete-account:hover {
+    scale: 1.02;
+    font-family: 600;
+    transform: translateY(-3px);
+    font-weight: 700;
+}
+.what-can-be-changed-options a:active, .delete-account:active {
+    transform: translateY(var(--button-click-down-y));
+    scale: var(--button-click-scale);
+    font-weight: 500 !important;
+    opacity: .7;
+}
+.settings-name {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.what-can-be-changed-row {
+    justify-content: center;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+.what-can-be-changed-options {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,6 @@
+.subintro {
+    font-size: 16px;
+}
+#catalog {
+    grid-template-columns: 1;
+}
